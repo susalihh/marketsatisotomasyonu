@@ -35,7 +35,7 @@ namespace marketsatisotomasyonu.Forms
             conn.Open();
             OracleCommand cmd = new OracleCommand();
             cmd = conn.CreateCommand();
-            cmd.CommandText = "select urunadi, urunsatisfiyati, urunkdv, b.adet, b.uruntutar from urunler a INNER JOIN(select faturaid, urunbarkod, adet, uruntutar from satistablosu ) b ON a.urunbarkodno = b.urunbarkod and b.faturaid = :pa";
+            cmd.CommandText = "select urunadi, urunkdv, b.adet, b.uruntutar from urunler a INNER JOIN(select faturaid, urunbarkod, adet, uruntutar from satistablosu ) b ON a.urunbarkodno = b.urunbarkod and b.faturaid = :pa";
 
 
 
@@ -52,7 +52,7 @@ namespace marketsatisotomasyonu.Forms
                 {
                     dataGridView1.Rows.Add(reader.GetString(reader.GetOrdinal("urunadi")),
                         reader.GetInt32(reader.GetOrdinal("adet")),
-                        reader.GetDecimal(reader.GetOrdinal("urunsatisfiyati")),
+                        reader.GetDecimal(reader.GetOrdinal("uruntutar"))/ reader.GetInt32(reader.GetOrdinal("adet")),
                         reader.GetDecimal(reader.GetOrdinal("uruntutar")),
                         reader.GetDecimal(reader.GetOrdinal("urunkdv")));
                 }

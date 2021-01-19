@@ -245,7 +245,7 @@ namespace marketsatisotomasyonu.Forms
             conn.Open();
             OracleCommand cmd = new OracleCommand();
             cmd = conn.CreateCommand();
-            cmd.CommandText = "URUN_ZAM";
+            cmd.CommandText = "urun_zam";
 
             cmd.CommandType = CommandType.StoredProcedure;
 
