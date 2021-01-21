@@ -278,7 +278,6 @@ namespace marketsatisotomasyonu
             this.Name = "FormMainMenu";
             this.Text = "FormMainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();

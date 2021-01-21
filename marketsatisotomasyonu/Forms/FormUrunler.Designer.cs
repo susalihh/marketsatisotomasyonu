@@ -51,13 +51,13 @@ namespace marketsatisotomasyonu.Forms
             this.kdvText = new System.Windows.Forms.TextBox();
             this.stokMiktariText = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.zamButton = new FontAwesome.Sharp.IconButton();
             this.gecmisButton = new FontAwesome.Sharp.IconButton();
             this.ıconButton1 = new FontAwesome.Sharp.IconButton();
             this.guncelleButton = new FontAwesome.Sharp.IconButton();
             this.silButton = new FontAwesome.Sharp.IconButton();
             this.ekleButton = new FontAwesome.Sharp.IconButton();
             this.listeleButton = new FontAwesome.Sharp.IconButton();
-            this.zamButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -259,6 +259,29 @@ namespace marketsatisotomasyonu.Forms
             this.panel1.Size = new System.Drawing.Size(1299, 80);
             this.panel1.TabIndex = 26;
             // 
+            // zamButton
+            // 
+            this.zamButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.zamButton.FlatAppearance.BorderSize = 0;
+            this.zamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zamButton.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.zamButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.zamButton.ForeColor = System.Drawing.Color.White;
+            this.zamButton.IconChar = FontAwesome.Sharp.IconChar.Percentage;
+            this.zamButton.IconColor = System.Drawing.Color.White;
+            this.zamButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.zamButton.IconSize = 40;
+            this.zamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.zamButton.Location = new System.Drawing.Point(999, 0);
+            this.zamButton.Name = "zamButton";
+            this.zamButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.zamButton.Size = new System.Drawing.Size(123, 80);
+            this.zamButton.TabIndex = 29;
+            this.zamButton.Text = "Zam Yap";
+            this.zamButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.zamButton.UseVisualStyleBackColor = true;
+            this.zamButton.Click += new System.EventHandler(this.zamButton_Click);
+            // 
             // gecmisButton
             // 
             this.gecmisButton.Dock = System.Windows.Forms.DockStyle.Left;
@@ -272,10 +295,10 @@ namespace marketsatisotomasyonu.Forms
             this.gecmisButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.gecmisButton.IconSize = 60;
             this.gecmisButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.gecmisButton.Location = new System.Drawing.Point(792, 0);
+            this.gecmisButton.Location = new System.Drawing.Point(800, 0);
             this.gecmisButton.Name = "gecmisButton";
             this.gecmisButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.gecmisButton.Size = new System.Drawing.Size(201, 80);
+            this.gecmisButton.Size = new System.Drawing.Size(199, 80);
             this.gecmisButton.TabIndex = 28;
             this.gecmisButton.Text = "Düzenleme Geçmişi";
             this.gecmisButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -295,10 +318,10 @@ namespace marketsatisotomasyonu.Forms
             this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ıconButton1.IconSize = 60;
             this.ıconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton1.Location = new System.Drawing.Point(598, 0);
+            this.ıconButton1.Location = new System.Drawing.Point(602, 0);
             this.ıconButton1.Name = "ıconButton1";
             this.ıconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.ıconButton1.Size = new System.Drawing.Size(194, 80);
+            this.ıconButton1.Size = new System.Drawing.Size(198, 80);
             this.ıconButton1.TabIndex = 27;
             this.ıconButton1.Text = "Kategoriler Markalar";
             this.ıconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -318,7 +341,7 @@ namespace marketsatisotomasyonu.Forms
             this.guncelleButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.guncelleButton.IconSize = 60;
             this.guncelleButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.guncelleButton.Location = new System.Drawing.Point(416, 0);
+            this.guncelleButton.Location = new System.Drawing.Point(420, 0);
             this.guncelleButton.Name = "guncelleButton";
             this.guncelleButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.guncelleButton.Size = new System.Drawing.Size(182, 80);
@@ -340,7 +363,7 @@ namespace marketsatisotomasyonu.Forms
             this.silButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.silButton.IconSize = 60;
             this.silButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.silButton.Location = new System.Drawing.Point(292, 0);
+            this.silButton.Location = new System.Drawing.Point(296, 0);
             this.silButton.Name = "silButton";
             this.silButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.silButton.Size = new System.Drawing.Size(124, 80);
@@ -362,7 +385,7 @@ namespace marketsatisotomasyonu.Forms
             this.ekleButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ekleButton.IconSize = 60;
             this.ekleButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ekleButton.Location = new System.Drawing.Point(154, 0);
+            this.ekleButton.Location = new System.Drawing.Point(158, 0);
             this.ekleButton.Name = "ekleButton";
             this.ekleButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.ekleButton.Size = new System.Drawing.Size(138, 80);
@@ -387,35 +410,12 @@ namespace marketsatisotomasyonu.Forms
             this.listeleButton.Location = new System.Drawing.Point(0, 0);
             this.listeleButton.Name = "listeleButton";
             this.listeleButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.listeleButton.Size = new System.Drawing.Size(154, 80);
+            this.listeleButton.Size = new System.Drawing.Size(158, 80);
             this.listeleButton.TabIndex = 23;
             this.listeleButton.Text = "Listele";
             this.listeleButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.listeleButton.UseVisualStyleBackColor = true;
             this.listeleButton.Click += new System.EventHandler(this.listeleButton_Click);
-            // 
-            // zamButton
-            // 
-            this.zamButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.zamButton.FlatAppearance.BorderSize = 0;
-            this.zamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.zamButton.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.zamButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.zamButton.ForeColor = System.Drawing.Color.White;
-            this.zamButton.IconChar = FontAwesome.Sharp.IconChar.Percentage;
-            this.zamButton.IconColor = System.Drawing.Color.White;
-            this.zamButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.zamButton.IconSize = 60;
-            this.zamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.zamButton.Location = new System.Drawing.Point(993, 0);
-            this.zamButton.Name = "zamButton";
-            this.zamButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.zamButton.Size = new System.Drawing.Size(142, 80);
-            this.zamButton.TabIndex = 29;
-            this.zamButton.Text = "Zam Yap";
-            this.zamButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.zamButton.UseVisualStyleBackColor = true;
-            this.zamButton.Click += new System.EventHandler(this.zamButton_Click);
             // 
             // FormUrunler
             // 

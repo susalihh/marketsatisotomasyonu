@@ -26,7 +26,6 @@ namespace marketsatisotomasyonu
             panelMenu.Controls.Add(leftBorderBtn);
             //form
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-
         }
         
         public FormMainMenu(string a)
@@ -44,9 +43,7 @@ namespace marketsatisotomasyonu
                 raporlarButton.Enabled = false;
                 stokButton.Enabled = false;
             }
-
         }
-
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
@@ -101,15 +98,6 @@ namespace marketsatisotomasyonu
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void FormMainMenu_Load(object sender, EventArgs e)
-        {
-
         }
         private void satisEkraniButton_Click(object sender, EventArgs e)
         {

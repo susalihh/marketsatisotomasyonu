@@ -128,5 +128,16 @@ namespace marketsatisotomasyonu.Forms
             FormFaturaDetay frm = new FormFaturaDetay(faturaid, Convert.ToDecimal(dataGridView1.CurrentRow.Cells[3].Value), Convert.ToDateTime(dataGridView1.CurrentRow.Cells[2].Value), dataGridView1.CurrentRow.Cells[4].Value.ToString());
             frm.ShowDialog();
         }
+       
+        private void raporButton_Click(object sender, EventArgs e)
+        {
+            int[] dizi = new int[dataGridView1.RowCount - 1];
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                dizi[i] = Convert.ToInt32(dataGridView1.Rows[i].Cells[0].Value);
+            }
+            FormRapor frm = new FormRapor(dizi,Convert.ToDateTime( dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
+            frm.ShowDialog();
+        }
     }
 }

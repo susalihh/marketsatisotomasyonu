@@ -40,6 +40,7 @@ namespace marketsatisotomasyonu.Forms
             this.haftaButton = new FontAwesome.Sharp.IconButton();
             this.dunButton = new FontAwesome.Sharp.IconButton();
             this.bugunButton = new FontAwesome.Sharp.IconButton();
+            this.raporButton = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -48,6 +49,7 @@ namespace marketsatisotomasyonu.Forms
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.raporButton);
             this.panel1.Controls.Add(this.detayButton);
             this.panel1.Controls.Add(this.seciliButton);
             this.panel1.Controls.Add(this.haftaButton);
@@ -56,7 +58,7 @@ namespace marketsatisotomasyonu.Forms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 370);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(869, 80);
+            this.panel1.Size = new System.Drawing.Size(1029, 80);
             this.panel1.TabIndex = 27;
             // 
             // panel2
@@ -66,7 +68,7 @@ namespace marketsatisotomasyonu.Forms
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(869, 44);
+            this.panel2.Size = new System.Drawing.Size(1029, 44);
             this.panel2.TabIndex = 28;
             // 
             // dateTimePicker2
@@ -89,7 +91,7 @@ namespace marketsatisotomasyonu.Forms
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 44);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(869, 326);
+            this.panel3.Size = new System.Drawing.Size(1029, 326);
             this.panel3.TabIndex = 29;
             // 
             // dataGridView1
@@ -99,7 +101,7 @@ namespace marketsatisotomasyonu.Forms
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(869, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(1029, 326);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -111,7 +113,7 @@ namespace marketsatisotomasyonu.Forms
             this.detayButton.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
             this.detayButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.detayButton.ForeColor = System.Drawing.Color.White;
-            this.detayButton.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            this.detayButton.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.detayButton.IconColor = System.Drawing.Color.White;
             this.detayButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.detayButton.IconSize = 60;
@@ -215,12 +217,35 @@ namespace marketsatisotomasyonu.Forms
             this.bugunButton.UseVisualStyleBackColor = true;
             this.bugunButton.Click += new System.EventHandler(this.bugunButton_Click);
             // 
+            // raporButton
+            // 
+            this.raporButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.raporButton.FlatAppearance.BorderSize = 0;
+            this.raporButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.raporButton.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.raporButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.raporButton.ForeColor = System.Drawing.Color.White;
+            this.raporButton.IconChar = FontAwesome.Sharp.IconChar.FileSignature;
+            this.raporButton.IconColor = System.Drawing.Color.White;
+            this.raporButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.raporButton.IconSize = 60;
+            this.raporButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.raporButton.Location = new System.Drawing.Point(854, 0);
+            this.raporButton.Name = "raporButton";
+            this.raporButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.raporButton.Size = new System.Drawing.Size(159, 80);
+            this.raporButton.TabIndex = 28;
+            this.raporButton.Text = "Rapor";
+            this.raporButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.raporButton.UseVisualStyleBackColor = true;
+            this.raporButton.Click += new System.EventHandler(this.raporButton_Click);
+            // 
             // FormSatisRapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(869, 450);
+            this.ClientSize = new System.Drawing.Size(1029, 450);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -248,5 +273,6 @@ namespace marketsatisotomasyonu.Forms
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private FontAwesome.Sharp.IconButton raporButton;
     }
 }

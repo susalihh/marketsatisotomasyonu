@@ -73,7 +73,6 @@ namespace marketsatisotomasyonu.Forms
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             textBox1.Text = "YÖNETİCİ";
-            //textBox2
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -94,6 +93,14 @@ namespace marketsatisotomasyonu.Forms
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
             textBox1.Text = "KASA 4";
+        }
+
+        private void passText_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click((object)sender, (EventArgs)e);
+            }
         }
     }
 }
