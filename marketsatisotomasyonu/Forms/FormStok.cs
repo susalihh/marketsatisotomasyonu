@@ -17,7 +17,7 @@ namespace marketsatisotomasyonu.Forms
         {
             InitializeComponent();
         }
-        int sayac = 3;
+        int sayac = 30;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -96,7 +96,7 @@ namespace marketsatisotomasyonu.Forms
             dataGridView1.Columns[3].Name = "Stok Miktarı";
             dataGridView1.Columns[3].Width = 100;
             textBox1.Text = sayac.ToString();
-            listele(3);
+            listele(30);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
